@@ -6,8 +6,8 @@ import (
 )
 
 type TopResult struct {
-	Word  string
-	Count int
+	Word  string `json:"word"`
+	Count int    `json:"count"`
 }
 
 func GetTopResults(text string, n int) ([]TopResult, error) {
